@@ -8,7 +8,8 @@
     <title>Inventory &mdash; My Car Dealership</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,15 +36,77 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-        </div>
+    <main>
+        <section class="jumbotron inventory">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>For Every Turn</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="search-form">
+                <h2>Search for cars</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-3" style="padding: 0;">
+                            <div class="dropdown">
+                                <select class="form-control" name="" id="">
+                                    <option value="">Make</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding: 0;">
+                            <div class="dropdown">
+                                <select class="form-control" name="" id="">
+                                    <option value="">model</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding: 0;">
+                            <div class="dropdown">
+                                <select class="form-control" name="" id="">
+                                    <option value="">Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="inventory">
+            <div class="container">
+                <div class="row ajax-inventory">
+                    <div class="col-md-4">
+                        <h2 style="text-align: center;">Loading inventory...</h2>
+                    </div>
+                </div>
 
-        <hr>
-        <footer>
-            <p>&copy; 2017 Cars Company, Inc.</p>
-        </footer>
-    </div> <!-- /container -->
+                <hr>
+            </div> <!-- /container -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2017 Cars Company, Inc.</p>
+                </div>
+                <div class="col-md-6 social-links">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i>                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

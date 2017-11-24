@@ -1,40 +1,90 @@
-{
-    "make":"Audi",
-    "model":"R8",
-    "year":2018,
-    "image_url": "https://www.cstatic-images.com/car-pictures/main/CAC70AUC171A021001.png",
-    "MSRP":"164,900",
-    "rating":5
-},
-{
-    "make":"Audi",
-    "model":"RS 7",
-    "year":2017,
-    "image_url": "https://www.cstatic-images.com/car-pictures/main/USC60AUC311A021001.png",
-    "MSRP":"113,900",
-    "rating":4
-},
-{
-    "make":"Audi",
-    "model":"R8",
-    "year":2018,
-    "image_url": "https://www.cstatic-images.com/car-pictures/main/CAC70AUC171A021001.png",
-    "MSRP":"164,900",
-    "rating":5
-},
-{
-    "make":"Audi",
-    "model":"R8",
-    "year":2018,
-    "image_url": "https://www.cstatic-images.com/car-pictures/main/CAC70AUC171A021001.png",
-    "MSRP":"164,900",
-    "rating":5
-},
-{
-    "make":"Audi",
-    "model":"R8",
-    "year":2018,
-    "image_url": "https://www.cstatic-images.com/car-pictures/main/CAC70AUC171A021001.png",
-    "MSRP":"164,900",
-    "rating":5
-},
+[
+    {
+        "make":"Audi",
+        "model":"R8",
+        "year":2018,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/CAC70AUC171A021001.png",
+        "MSRP":"164,900",
+        "rating":5
+    },
+    {
+        "make":"Audi",
+        "model":"RS 7",
+        "year":2017,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC60AUC311A021001.png",
+        "MSRP":"113,900",
+        "rating":4
+    },
+    {
+        "make":"Audi",
+        "model":"A5",
+        "year":2018,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC80AUC191A121001.png",
+        "MSRP":"42,600",
+        "rating":5
+    },
+    {
+        "make":"BMW",
+        "model":"430",
+        "year":2018,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC80BMC741A021001.png",
+        "MSRP":"43,300",
+        "rating":4.5
+    },
+    {
+        "make":"Bentley",
+        "model":"Continental GT",
+        "year":2018,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC60BEC061A021001.png",
+        "MSRP":"236,600",
+        "rating":5
+    },
+    {
+        "make":"Alfa Romeo",
+        "model":"4C Spider",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC50ALC061A021001.png",
+        "MSRP":"65,900",
+        "rating":4.5
+    },
+    {
+        "make":"Lamborghini",
+        "model":"Aventador",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC30LGC041A021001.png",
+        "MSRP":"399,500",
+        "rating":4.5
+    },
+    {
+        "make":"Lamborghini",
+        "model":"Huracan",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC60LGC051A021001.png",
+        "MSRP":"199,800",
+        "rating":5
+    },
+    {
+        "make":"Roll Royce",
+        "model":"Phantom",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC50RRC071A021001.png",
+        "MSRP":"417,825",
+        "rating":0
+    },
+    {
+        "make":"Ferrari",
+        "model":"12berlinetta",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC50FRC181A021001.png",
+        "MSRP":"319,995",
+        "rating":0
+    },
+    {
+        "make":"Ford",
+        "model":"Fusion",
+        "year":2016,
+        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC70FOC202D021001.PNG",
+        "MSRP":"22,610",
+        "rating":4.8
+    }
+]

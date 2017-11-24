@@ -1,7 +1,13 @@
 body {
-    background-color: #fff;
+    background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
     padding-top: 82px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #792c83;
+    border-color: #792c83;
 }
 
 .navbar {
@@ -10,7 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .navbar::after {
-    content: "Welcome to my Car Dealership project";
+    content: "Welcome to my Car Dealership";
     display: block;
     width: 100%;
     height: 32px;
@@ -29,7 +35,7 @@ body {
     position: absolute;
     top: 10px;
     left: 0;
-    height: 60px;
+    height: 65px;
     width: auto;
     display: block;
 }
@@ -47,4 +53,197 @@ body {
 
 .jumbotron {
     padding: 0;
+    background-color: #fff;
+}
+.inventory {
+    background: url('https://www.cstatic-images.com/stock/2400x753/14/img-1002601309-1510603483714.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 0 0 100px 0;
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 400px;
+}
+.inventory h1 {
+    margin: 0 0 30px 0;
+    padding: 50px 0 50px;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 1px 2px 4px rgba(0,0,0,.5);
+}
+.search-form {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    background-color: #250957;
+    padding: 2em 3.5em;
+    border-radius: 4px;
+    margin-bottom: -15%;
+}
+.search-form .btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.search-form h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: -15px;
+}
+.search-form form>div {
+    overflow: hidden;
+}
+.search-form .dropdown {
+    background-color: #fff;
+    border-right: 1px solid #e1e1e1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+.search-form .dropdown::after {
+    content: "";
+    position: absolute;
+    z-index: 4444;
+    pointer-events: none;
+    background-image: url(data:image/svg+xml;charset=UTF-8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2011.893%206.503%27><polygon%20fill%3D%27%23666666%27%20points%3D%2711.893%2C0.559%2011.336%2C0%205.947%2C5.39%200.559%2C0%200%2C0.559%205.947%2C6.503%27%2F><%2Fsvg>);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+}
+.search-form form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 0;
+    background: none;
+    width: 100%;
+    display: block;
+    height: 40px;
+}
+.car-item {
+    background-color: #fff;
+    box-shadow: 0 3px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.car-item>header>*{
+    padding: 0 15px 1px 15px;
+}
+.car-item figure {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+.car-item figure img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.car-item figure::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(-180deg,rgba(255,254,254,.07),hsla(0,0%,54%,.18) 40%,rgba(0,0,0,.3) 88%);
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    padding: 56.25% 0 0;
+    overflow: hidden;
+}
+.car-item h2 {
+    font-size: 24px;
+}
+.car-item .rating i {
+    color: #792c83;
+}
+.car-item .price small {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+}
+.car-item .price p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #250858;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer p {
+    margin: 0;
+    line-height: 40px;
+    display: block;
+}
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 40px;
+    margin: 0 3px;
+    transition: all .3s ease;
+}
+footer a:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.2)
+}
+footer .social-links {
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 768px) {
+    .navbar::after {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .navbar-brand > img {
+        left: 15px;
+    }
+    .inventory {
+        padding: 30px 0 40px 0;
+        margin-bottom: 40px;
+    }
+    .inventory h1 {
+        margin-bottom: 40px;
+    }
+    .car-item {
+        margin-bottom: 20px;
+    }
+    .search-form {
+        border-radius: 0;
+        padding: 1em 2.5em;
+        text-align: center;
+    }
+
+    footer,
+    footer .social-links {
+        text-align: center;
+    }
 }

@@ -8,7 +8,8 @@
     <title>My Car Dealership</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Raleway:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,46 +41,70 @@
         <div class="video-bg">
             <!-- 16:9 aspect ratio -->
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j-eAsQk0Bwg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1"></iframe>
+                <video autoplay loop>
+                    <source src="assets/videos/video.mp4" type="video/mp4" />
+                </video>
+                <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j-eAsQk0Bwg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1"></iframe> -->
             </div>
         </div>
         <div class="container">
-            <h1>Hello, world!</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis saepe praesentium labore, distinctio illo eligendi incidunt fugit soluta placeat sed eius maxime sapiente cumque commodi aliquid aperiam dolor minima nemo.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <div class="page-header">
+                <h1>Welcome!</h1>
+            </div>
+            <p>Cars.com is a leading online destination that helps car shoppers and owners navigate every turn of car ownership. A pioneer in automotive classifieds, the company has evolved into one of the largest digital automotive platforms...</p>
+            <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more &raquo;</a></p>
         </div>
-        </div>
+    </div>
 
-        <div class="container">
-        <!-- Example row of columns -->
+    <div class="container">
         <div class="row">
-            <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1>New Cars</h1>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img class="img-responsive" src="https://www.cars.com/feo-cdn/R/6/m_rX3g1EU.jpg" alt="">
+                </figure>
+                <h2>2018 Hyundai Sonata</h2>
+                <p>It's not a full redesign, but this quiet, comfortable sedan has significantly improved in looks, interior feel and driving dynamics.</p>
+                <p><a class="btn btn-default" href="inventory.html" role="button">See our inventory &raquo;</a></p>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img class="img-responsive" src="https://www.cars.com/feo-cdn/e/E/okxQGsBdg.jpg" alt="">
+                </figure>
+                <h2>2018 Chevrolet Equinox</h2>
+                <p>The redesigned Equinox is less distinctive than its predecessor, but it arrives with definite refinement.</p>
+                <p><a class="btn btn-default" href="inventory.html" role="button">See our inventory &raquo;</a></p>
+            </div>
+        </div>
+    </div>
 
-        <hr>
-
-        <footer>
-            <p>&copy; 2017 Cars Company, Inc.</p>
-        </footer>
-    </div> <!-- /container -->
-
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2017 Cars Company, Inc.</p>
+                </div>
+                <div class="col-md-6 social-links">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://underscorejs.org/underscore.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

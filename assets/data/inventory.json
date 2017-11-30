@@ -1,5 +1,13 @@
 [
     {
+        "make":"Lamborghini",
+        "model":"Huracan",
+        "year":2016,
+        "image_url": "/assets/images/inventory/lamborghini-huracan-2016.png",
+        "MSRP":"199,800",
+        "rating":5
+    },
+    {
         "make":"Audi",
         "model":"R8",
         "year":2018,
@@ -54,14 +62,6 @@
         "image_url": "https://www.cstatic-images.com/car-pictures/main/USC30LGC041A021001.png",
         "MSRP":"399,500",
         "rating":4.5
-    },
-    {
-        "make":"Lamborghini",
-        "model":"Huracan",
-        "year":2016,
-        "image_url": "https://www.cstatic-images.com/car-pictures/main/USC60LGC051A021001.png",
-        "MSRP":"199,800",
-        "rating":5
     },
     {
         "make":"Roll Royce",

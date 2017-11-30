@@ -8,6 +8,32 @@ body {
     color: #fff;
     background-color: #792c83;
     border-color: #792c83;
+    transition: all .3s ease;
+    text-transform: uppercase;
+}
+.btn-primary:hover {
+    background-color: #4f3c78;
+    border-color: #4f3c78;
+}
+
+
+.page-header {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 0;
+}
+.page-header::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 1px;
+    background-color: #792c83;
+}
+.page-header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .navbar {
@@ -43,6 +69,8 @@ body {
 .navbar-inverse .navbar-nav>li>a {
     color: rgba(255, 255, 255, 0.7);
     transition: color .3s ease;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
@@ -55,25 +83,8 @@ body {
     padding: 0;
     background-color: #fff;
 }
-.inventory {
-    background: url('https://www.cstatic-images.com/stock/2400x753/14/img-1002601309-1510603483714.jpg') center center no-repeat;
-    background-size: cover;
-    padding: 0 0 100px 0;
-    position: relative;
-    margin-bottom: 40px;
-    min-height: 400px;
-}
-.inventory h1 {
-    margin: 0 0 30px 0;
-    padding: 50px 0 50px;
-    color: #fff;
-    font-size: 4em;
-    font-weight: 700;
-    text-shadow: 1px 2px 4px rgba(0,0,0,.5);
-}
 .search-form {
     max-width: 1140px;
-    margin: 0 auto;
     position: relative;
     bottom: 0;
     left: auto;
@@ -81,8 +92,7 @@ body {
     width: 100%;
     background-color: #250957;
     padding: 2em 3.5em;
-    border-radius: 4px;
-    margin-bottom: -15%;
+    margin: -6% auto 30px auto;
 }
 .search-form .btn {
     display: block;
@@ -110,7 +120,7 @@ body {
 .search-form .dropdown::after {
     content: "";
     position: absolute;
-    z-index: 4444;
+    z-index: 2;
     pointer-events: none;
     background-image: url(data:image/svg+xml;charset=UTF-8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2011.893%206.503%27><polygon%20fill%3D%27%23666666%27%20points%3D%2711.893%2C0.559%2011.336%2C0%205.947%2C5.39%200.559%2C0%200%2C0.559%205.947%2C6.503%27%2F><%2Fsvg>);
     background-repeat: no-repeat;
@@ -146,6 +156,10 @@ body {
     background-color: #fff;
     box-shadow: 0 3px 0 rgba(0,0,0,.1);
     margin-bottom: 30px;
+    transition: .3s;
+}
+.car-item:hover {
+    box-shadow: 0 3px 0 rgb(121, 44, 131);
 }
 .car-item>header>*{
     padding: 0 15px 1px 15px;
@@ -160,6 +174,12 @@ body {
     height: auto;
     display: block;
     margin: auto;
+    position: relative;
+    z-index: 9;
+    transition: .3s;
+}
+.car-item:hover figure img {
+    transform: scale(1.1)
 }
 .car-item figure::before {
     content: "";
@@ -191,8 +211,69 @@ body {
     font-size: 24px;
     font-weight: 700;
 }
+.car-item .price .w-tax {
+    color: green;
+}
+
+
+.contact-info {
+    background-color: #792c83;
+    text-align: center;
+}
+.contact-info h2 {
+    color: #fff;
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-family: "Raleway", arial, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+}
+.contact-info ul li {
+    padding: 20px 0;
+    text-align: left;
+    border-bottom: 1px solid #8e3a9a;
+}
+
+.contact-info ul li h4{
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-family: "Raleway", arial, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.contact-info ul li a{
+    color: rgba(255,255,255,1);
+}
+.contact-info ul li p{
+    margin: 0;
+    color: rgba(255,255,255,.7);
+}
+.contact-info .social-icons{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact-info .social-icons a{
+    font-size: 22px;
+    margin-right: 6px;
+    color: rgba(255,255,255,.7);
+    transition: all .3s ease;
+}
+.contact-info .social-icons a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
 
 footer {
+    margin-top: 80px;
     background-color: #250858;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -219,6 +300,9 @@ footer .social-links {
 
 }
 @media screen and (max-width: 768px) {
+    p {
+        text-align: justify;
+    }
     .navbar::after {
         text-align: right;
         padding-right: 20px;
@@ -237,12 +321,12 @@ footer .social-links {
         margin-bottom: 20px;
     }
     .search-form {
-        border-radius: 0;
+        margin: 0 auto 20px 0;
         padding: 1em 2.5em;
         text-align: center;
     }
 
-    footer,
+    footer p,
     footer .social-links {
         text-align: center;
     }

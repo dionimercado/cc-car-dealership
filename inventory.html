@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Raleway:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -37,36 +37,78 @@
     </nav>
 
     <main>
-        <section class="jumbotron inventory">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h1>For Every Turn</h1>
+        <section class="cars-carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="assets/images/slide-1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <!-- <h1>For Every Turn</h1> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/slide-2.jpg" alt="">
+                        <div class="carousel-caption">
+                            <!-- <h1>For Every Turn</h1> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/slide-3.jpg" alt="">
+                        <div class="carousel-caption">
+                            <!-- <h1>For Every Turn</h1> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/slide-4.jpg" alt="">
+                        <div class="carousel-caption">
+                            <!-- <h1>For Every Turn</h1> -->
+                        </div>
                     </div>
                 </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="search-form">
+        </section>
+        <section class="search-form">
+            <div>
                 <h2>Search for cars</h2>
-                <form>
+                <form id="search-form">
                     <div class="row">
                         <div class="col-md-3" style="padding: 0;">
                             <div class="dropdown">
-                                <select class="form-control" name="" id="">
-                                    <option value="">Make</option>
+                                <select class="form-control" name="make" id="makeSelect">
+                                    <option value="">All makes</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-3" style="padding: 0;">
                             <div class="dropdown">
-                                <select class="form-control" name="" id="">
-                                    <option value="">model</option>
+                                <select class="form-control" name="model" id="modelSelect">
+                                    <option value="">All models</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-3" style="padding: 0;">
                             <div class="dropdown">
-                                <select class="form-control" name="" id="">
-                                    <option value="">Year</option>
+                                <select class="form-control" name="year" id="yearSelect">
+                                    <option value="">All years</option>
                                 </select>
                             </div>
                         </div>
@@ -80,12 +122,10 @@
         <section id="inventory">
             <div class="container">
                 <div class="row ajax-inventory">
-                    <div class="col-md-4">
-                        <h2 style="text-align: center;">Loading inventory...</h2>
+                    <div class="col-lg-12">
+                        <h2 class="loading" style="text-align: center;">Loading inventory...</h2>
                     </div>
                 </div>
-
-                <hr>
             </div> <!-- /container -->
         </section>
     </main>
@@ -97,21 +137,20 @@
                     <p>&copy; 2017 Cars Company, Inc.</p>
                 </div>
                 <div class="col-md-6 social-links">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>                    </a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>                    </a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>                    </a>
-                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>                    </a>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>                    </a>
-                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i>                    </a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.number.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

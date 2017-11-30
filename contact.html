@@ -8,7 +8,8 @@
     <title>Contact &mdash; My Car Dealership</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Raleway:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,22 +36,89 @@
         </div>
     </nav>
 
+    <section>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.8010696049087!2d-111.89121819136435!3d33.557582230346306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0ace81551759%3A0x6523e0cfe8461a52!2sCoderCamps!5e0!3m2!1sen!2sus!4v1511756579682" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <ul>
+                        <li>
+                            <h4>Contact Info</h4>
+                            <p><strong>Office: </strong>  <a href="tel:18557552267">+1(855) 755-2267</a></p>
+                            <p><strong>Email: </strong> <a href="mailto:info@codercamps.com">info@codercamps.com</a></p>
+                        </li>
+                        <li>
+                            <h4>Facility Address</h4>
+                            <p>
+                                8444 N 90th St #110<br>
+                                Scottsdale, AZ 85258<br>
+                                United States
+                            </p>
+                        </li>
+                    </ul>
+                    <h2>Get in touch</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Send Message">
+                </form>
             </div>
         </div>
 
-        <hr>
-
-        <footer>
-            <p>&copy; 2017 Cars Company, Inc.</p>
-        </footer>
 
     </div> <!-- /container -->
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2017 Cars Company, Inc.</p>
+                </div>
+                <div class="col-md-6 social-links">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://underscorejs.org/underscore.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
         "make":"Lamborghini",
         "model":"Huracan",
         "year":2016,
-        "image_url": "/assets/images/inventory/lamborghini-huracan-2016.png",
+        "image_url": "http://dionimercado.com/coder-camps/FSWO101/car-dealership/assets/images/inventory/lamborghini-huracan-2016.png",
         "MSRP":"199,800",
         "rating":5
     },

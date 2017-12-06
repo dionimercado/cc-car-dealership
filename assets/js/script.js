@@ -1,4 +1,4 @@
-const url = '/assets/data/inventory.json';
+const url = 'assets/data/inventory.json';
 
 const cars = [];
 
